@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Micah Etheredge — Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    :root{--bg:#E1AFCA;--ink:#171217;--line:rgba(23,18,23,.22)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    .wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:28px 0;border-bottom:1px solid var(--line)}
+    nav a{color:inherit;text-decoration:none} .name{font-weight:700}
+    .links{display:flex;gap:22px;font-size:14px}
+    header{min-height:70vh;display:flex;align-items:flex-end;padding:72px 0 56px}
+    h1{font-family:'Permanent Marker',cursive;font-size:clamp(54px,10vw,138px);line-height:.95;letter-spacing:-.035em;margin:0;max-width:1100px;font-weight:400}
+    .intro{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:32px 0 90px;border-top:1px solid var(--line)}
+    .intro p{font-size:clamp(20px,2.2vw,30px);line-height:1.25;margin:0;max-width:720px}
+    .label{text-transform:uppercase;font-size:12px;letter-spacing:.12em}
+    section{padding:32px 0 90px;border-top:1px solid var(--line)}
+    .project{display:grid;grid-template-columns:80px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-bottom:1px solid var(--line)}
+    .project h2{margin:0;font-size:clamp(28px,4vw,56px);letter-spacing:-.04em}.project p{margin:8px 0 0;max-width:600px;line-height:1.5}.arrow{font-size:30px}
+    footer{display:flex;justify-content:space-between;gap:20px;padding:32px 0 50px;border-top:1px solid var(--line);font-size:14px}
+    @media(max-width:700px){.intro{grid-template-columns:1fr}.project{grid-template-columns:45px 1fr}.arrow{display:none}.links{gap:12px}header{min-height:58vh}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="name" href="#">Micah Etheredge</a><div class="links"><a href="#work">Work</a><a href="mailto:hello@example.com">Contact</a></div></nav>
+    <header><h1>Digital experience designer.</h1></header>
+    <div class="intro"><div class="label">About</div><p>I design clear, useful digital experiences, turning complex products and emerging technology into things people can actually understand and use.</p></div>
+    <section id="work">
+      <div class="label">Selected work</div>
+      <article class="project"><span>01</span><div><h2>Conversational AI</h2><p>Designing reusable interaction patterns for helpful, human-centred conversational experiences.</p></div><span class="arrow">↗</span></article>
+      <article class="project"><span>02</span><div><h2>Experience systems</h2><p>Connecting customer journeys, patterns and components into scalable product experiences.</p></div><span class="arrow">↗</span></article>
+      <article class="project"><span>03</span><div><h2>Prototypes & experiments</h2><p>Using design and code to quickly explore, test and communicate new ideas.</p></div><span class="arrow">↗</span></article>
+    </section>
+    <footer><span>Newcastle / Sydney / Australia</span><span>© 2026 Micah Etheredge</span></footer>
+  </div>
+</body>
+</html>
